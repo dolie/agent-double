@@ -51,9 +51,6 @@
       padding: 0;
       font-family: sans-serif;
     }
-    .container {
-      display: flex;
-    }
     .page {
       text-align: center;
       display: flex;
@@ -61,6 +58,10 @@
       flex-wrap: wrap;
       align-content: center;
       height: 100%;
+    }
+    #app{
+        max-width: 300px;
+        margin: auto;
     }
     .page * {
       flex-basis: 100%;
@@ -76,13 +77,12 @@
     }
     input {
       display: block;
-      margin: 25px 100px;
+      margin: 25px auto;
       text-align: center;
       line-height: 25px;
       border: none;
       border-bottom: solid 1px lightskyblue;
       font-size: 25px;
-      flex-basis: 50% !important;
     }
     .timer.alert {
       color: white;
@@ -101,7 +101,7 @@
       margin: 0;
     }
     button {
-      margin: 25px 50px;
+      margin: 25px auto;
       transition: all 0.3s ease;
       display: block;
       padding: 0 25px;
